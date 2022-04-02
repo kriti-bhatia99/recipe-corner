@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/cream"
+    tools:context=".AddRecipe">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:padding="10dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:text="Add New Recipe"
+            android:textSize="35dp"
+            android:textStyle="bold"
+            android:layout_marginBottom="30dp"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter recipe name"
+            android:textColor="@color/black"
+            android:background="@drawable/edit_text_bg"
+            android:padding="15dp"
+            android:textColorHint="@color/grey"
+            android:id="@+id/addRecipeName"
+            android:layout_margin="10dp"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter recipe ingredients"
+            android:id="@+id/addRecipeIngredients"
+            android:drawablePadding="10dp"
+            android:maxLines="10"
+            android:gravity="bottom"
+            android:background="@drawable/edit_text_bg"
+            android:padding="15dp"
+            android:textColorHint="@color/grey"
+            android:layout_margin="10dp"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter recipe instructions"
+            android:id="@+id/addRecipeInstructions"
+            android:textColor="@color/black"
+            android:maxLines="10"
+            android:gravity="bottom"
+            android:background="@drawable/edit_text_bg"
+            android:padding="15dp"
+            android:textColorHint="@color/grey"
+            android:layout_margin="10dp"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Add Recipe"
+            android:ems="15"
+            android:background="@drawable/button_bg"
+            android:id="@+id/addRecipeButton"
+            android:textColor="@color/white"
+            android:layout_margin="10dp"
+            android:layout_gravity="center"/>
+
+    </LinearLayout>
+
+</RelativeLayout>
